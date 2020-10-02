@@ -6,7 +6,7 @@ function formatNode($nodesPython, $nodesJava)
  
   $formated = array();
   
-  for($i = 0; $i <= 100; $i++){
+  for($i = 0; $i <= 99; $i++){
     $formated[$i]['Nome do Repositório Python'] = $nodesPython[$i]['nameWithOwner'];
     $formated[$i]['Estrelas Python'] = $nodesPython[$i]['stargazerCount'];
     $formated[$i]['Watchers Python'] = $nodesPython[$i]['watchers']['totalCount'];
