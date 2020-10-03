@@ -8,14 +8,10 @@ function createCsv($data, $dir)
   $fileContent .= implode(',', $header);
   $fileContent .= "\r\n";
 
+ 
   foreach ($data as $d => $val) {
 
-    foreach($val as $k => $v){
-
-      $fileContent .= $v;
-      $fileContent .= ",";
-    }
-   
+    $fileContent .= implode(',',array_values($val));
     $fileContent .= "\r\n";
     
   }
